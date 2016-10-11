@@ -19,7 +19,6 @@ body {
 	align-items: baseline;
 	background: #273B47;
 	font-family: 'Lato', sans-serif;
-	font-weight: bold;
 	color: white;
 }
 
@@ -33,7 +32,7 @@ body {
 
 .MainMenu ul li {
 	display: inline-block;
-	padding: 0 15px;
+	padding: 0;
 	margin: 0;
 }
 
@@ -44,8 +43,18 @@ body {
     position: absolute;
     top: 13px;
     right: 0;
+}*/
+
+nav li:first-child:before {
+	display: none;
 }
-*/
+
+nav li:before {
+	content: "|";
+	display: inline-block;
+	margin: 0 15px;
+}
+
 .MainMenu a {
 	color: white;
 	text-decoration: none;
@@ -54,6 +63,15 @@ body {
 
 .Active {
 	border-top: 3px solid #7DCC40;
+}
+
+.Red-Button {
+	background: #FF4842;
+	border-bottom: 3px solid #D0272A;
+	padding: 5px 15px;
+	border-radius: 3px;
+	margin-right: 8px;
+	margin-left: 20px;
 }
 
 .SearchBar {
